@@ -3,7 +3,7 @@ import re
 import sys
 
 pattern = r'[\w\.-]+@[\w\.-]+'
-f = open('secret/samp.txt', 'r')
+f = open('data/info.txt', 'r')
 
 match = re.findall(pattern, f.read())
 
