@@ -23,10 +23,7 @@ f = open('data/info.txt', 'r')
 match = re.findall(pattern, f.read())
 
 if match:
-    print(match)
-
-print("\n")    
-print ("Emails successfully extracted. Goodbye!", "\n")
+    print(match, "\n","\n","Emails successfully extracted. Goodbye!", "\n")
 else:
     print("\n", "No extractable emails found in the document", "\n")
 
