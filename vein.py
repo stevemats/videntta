@@ -13,7 +13,7 @@ print('''
      _.--'  b)                       ``--...____.'   .'
     (     _.      )).      `-._                     <
      `\|\|\|\|)-.....___.-     `-.         __...--'-.'.
- jgs   `---......____...---`.___.'----... .'         `.;
+ stv   `---......____...---`.___.'----... .'         `.;
                                         `-`           `  
 ''')
 print("\n",  "Emails have been successful extracted, checkout the output in the program folder", "\n")
