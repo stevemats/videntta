@@ -1,6 +1,7 @@
 #!/usr/bin/env/python
 import re
 import sys
+import random as r
 
 print('''
 
@@ -16,7 +17,7 @@ print('''
  stv   `---......____...---`.___.'----... .'         `.;
                                         `-`           `  
 ''')
-print("\n",  "Emails have been successful extracted, checkout the output in the program folder", "\n")
+print("\n", r.choice(list(open('leaflets/spas.txt'))),"\n")
 
 pattern = r'[\w\.-]+@[\w\.-]+'
 f = open('data/info.txt', 'r')
