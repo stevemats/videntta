@@ -1,0 +1,7 @@
+Emails have been successful extracted, checkout the output in the program folder
+Hooray! Extraction Complete..
+Extracted emails have been packaged to the program file for delivery 
+Great work! You extracted all the emails within 64 microseconds
+Extraction Complete! Program awaiting next task..
+Fab day Boss! Extraction complete!
+Fabilastic day! Extraction complete. Output is match.txt
