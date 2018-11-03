@@ -22,7 +22,7 @@ print('''
 # pattern to use to find valid emails and path to user data
 # introduced and defined as user input
 
-pattern = r'[\w\.-]+@[\w\.-]+'
+pattern = r'[\w\.-]+@[\w\.-]+\.\w+'
 user_input = input("Enter the path to your file: ");
 
 '''
