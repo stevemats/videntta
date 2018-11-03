@@ -1,5 +1,6 @@
 #!/usr/bin/env/python
 import re
+import time
 import sys, os
 import random as r
 
@@ -18,12 +19,20 @@ print('''
                                         `-`           `  
 ''')
 
-
 # pattern to use to find valid emails and path to user data
 # introduced and defined as user input
 
 pattern = r'[\w\.-]+@[\w\.-]+\.\w+'
-user_input = input("Enter the path to your file: ");
+user_input = input(">>>Enter the path to your file: ");
+
+# //playing around with the time module to customize display method and time
+def slowprint(videntta):
+    for n in videntta + '\n' :
+        sys.stdout.write(n)
+        sys.stdout.flush()
+        time.sleep(8. / 100)
+slowprint("Starting email extraction... ")
+time.sleep(5)
 
 '''
 exception when the input path is invalid defining the file to read 
