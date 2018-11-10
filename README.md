@@ -6,10 +6,7 @@ document(s).
 ### Installation
 
 Dillinger requires [Python](https://python.org/) to run. Download [Videntta](https://github.com/stevemats/videntta/) program from github and store it in
-your desired folder location .e.g. Desktop. Next create a folder with a deisred name 
-and extract the zip inside it. From there store the text document that you need to extract
-emails from in folder named "data" and rename your document from the initial name to 
-"info". As simple as that.
+your desired folder location .e.g. Desktop. Next extract the zip and you are good to start. As simple as that.
 
 Now lets run our program in our desired terminal. For demonstration I'll be using 
 Command Prompt(cmd), Linux users can as well follow up:
@@ -29,7 +26,9 @@ $ ls                          (To view the files inside our folder)
 $ python vein.py
 ```
 
-
+After running the script, it will prompt you to input the path to your file( the one you extracting emails from..).
+Email extraction will happen on the backend automatically and present an output on a separate file with the name
+match(to present the email match output).
 
 
 **Contributers are welcomed**
