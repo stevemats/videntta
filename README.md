@@ -1,6 +1,6 @@
 # videntta
-A simple yet powerful program that can be used to extract emails from Large files
-If intergrated or expanded can be helpful to data reserchers to gather emails from Large
+A simple yet powerful program that you can use to extract emails from Large files
+If intergrated or expanded can be helpful to data researchers to gather emails from Large
 document(s).
 
 ## Installation
@@ -29,4 +29,4 @@ Email extraction will happen on the backend automatically and present an output 
 match(to present the email match output).
 
 
-**Contributers are welcomed**
+**The Project is open for Contribution**
