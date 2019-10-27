@@ -28,5 +28,7 @@ After running the script, it will prompt you to input the path to your file( the
 Email extraction will happen on the backend automatically and present an output on a separate file with the name
 match(to present the email match output).
 
+You can also run sample extraction process using the text document residing withing the Test-Doc folder.
+
 
 **The Project is open for Contribution**
