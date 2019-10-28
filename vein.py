@@ -20,7 +20,7 @@ print('''
 ''')
 
 
-# pattern to use to find valid emails and path to user data
+# User greeting menu with conditions to enable non-context keywords from execution
 def main():
     print('\n1. Extracting emails from document')
     print('2. Exit')
