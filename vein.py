@@ -9,7 +9,7 @@ print('''
 
 
                                             __
-      o                 /' ) 
+      o                 /' )
                       /'   (                          ,
                   __/'     )                        .' `;
    o      _.-~~~~'          ``---..__             .'   ;
@@ -17,12 +17,18 @@ print('''
     (     _.      )).      `-._                     <  free nation!!
      `\|\|\|\|)-.....___.-     `-.         __...--'-.'.
  stv   `---......____...---`.___.'----... .'         `.;
-                                        `-`           `  
+                                        `-`           `
 ''')
 
 # regular expression to define the search pattern
 pattern = r'[\w\.-]+@[\w\.-]+\.\w+'
 user_input = input(">>>Enter the path to your file: ");
+
+def email_list_to_text(emails):
+    text = ''
+    for email in emails:
+        text += '{}\n'.format(email)
+    return text
 
 # user screen starts with a slow printing output of 8 seconds
 def slowprint(videntta):
@@ -40,12 +46,13 @@ print("\n", r.choice(list(open('leaflets/spas.txt'))),"\n")
 
 match = re.findall(pattern, f.read())
 
+output = email_list_to_text(match)
 
 # Outputs identified emails(results) in the same program folder with a name match.txt
-sys.stdout=open("match.txt","w")
+with open('match.txt','w') as match_file:
+    match_file.write(output)
+
 if match:
-    print(match, "\n","\n","Emails successfully extracted. Goodbye!", "\n")
+    print("{} emails successfully extracted:\n\n{} ".format(len(match), output))
 else:
     print("\n", "No extractable emails found in the document", "\n")
-    
-sys.stdout.close()    
