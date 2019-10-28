@@ -45,6 +45,12 @@ def extractor():
     pattern = r'[\w\.-]+@[\w\.-]+\.\w+'
     user_input = input(">>>Enter the path to your file: ")
 
+    def email_list_to_text(emails):
+        text = ''
+        for email in emails:
+            text += '{}\n'.format(email)
+        return text
+
     # user screen starts with a slow printing output of 8 seconds
     def slowprint(drake):
         for n in drake + '\n':
@@ -62,18 +68,17 @@ def extractor():
 
     match = re.findall(pattern, f.read())
 
-    for elem in match:
-        # Outputs identified emails(results) in the same program folder with a name match.txt
-        sys.stdout = open("match.txt", "w")
-        # sorting the output in a formatted list
-        if match:
-            print(*match, sep='\n')
-            print("\n", "\n", "Emails successfully extracted. Goodbye!", "\n")
-        else:
-            print("\n", "No extractable emails found in the document", "\n")
- 
-        sys.stdout.close()
+    output = email_list_to_text(match)
 
+    # Outputs identified emails(results) in the same program folder with a name match.txt
+    with open('match.txt', 'w') as match_file:
+        match_file.write(output)
+
+    if match:
+        print("{} emails successfully extracted:\n\n{} ".format(len(match), output))
+    else:
+        print("\n", "No extractable emails found in the document", "\n")
+        
 
 if __name__ == '__main__':
     main()
