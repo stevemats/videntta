@@ -20,7 +20,7 @@ print('''
 ''')
 
 
-# User greeting menu with conditions to enable non-context keywords from execution
+# User greeting menu with conditions to prevent non-context keywordsbeig executed
 def main():
     print('\n1. Extracting emails from document')
     print('2. Exit')
@@ -70,6 +70,7 @@ def extractor():
 
     output = email_list_to_text(match)
 
+    # added feature to sort out the email in list
     # Outputs identified emails(results) in the same program folder with a name match.txt
     with open('match.txt', 'w') as match_file:
         match_file.write(output)
@@ -78,7 +79,7 @@ def extractor():
         print("{} emails successfully extracted:\n\n{} ".format(len(match), output))
     else:
         print("\n", "No extractable emails found in the document", "\n")
-        
+
 
 if __name__ == '__main__':
     main()
