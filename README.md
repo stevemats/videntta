@@ -31,4 +31,14 @@ match(to present the email match output).
 You can also run sample extraction process using the text document residing withing the Test-Doc folder.
 
 
+## ToDo:
+#### Extraction->
+- EXtract emails from unified resource locators
+- Email extractions from microsoft word documents
+- Support extractions from PDF, Word documents and other types of documents
+
+#### Output-->
+- Support export to pdf
+- Custom Watermark Insertion in output document(for proper presentation)
+
 **The Project is open for Contribution**
