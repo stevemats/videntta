@@ -45,4 +45,29 @@ You can also run sample extraction process using the text document residing with
 - Support export to pdf
 - Custom Watermark Insertion in output document(for proper presentation)
 
+### How to contribute
+
+```
+  > git clone https://github.com/stevemats/videntta.git
+```
+```
+  > git pull
+```
+```
+  > git checkout -b "your-branch-name"
+```
+ - Make changes and git add changes + git commit those changes
+ - then finally:
+```
+  > git push (and remember to create a pr)
+```
+- you can also contribute to my own branches using
+```
+  git fetch origin <my-branch-here>
+```
+Then finally:
+```
+> git checkout <branch>
+```
+
 **The Project is open for Contribution**
