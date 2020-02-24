@@ -3,6 +3,10 @@ A simple yet powerful program that you can use to extract emails from Large file
 If intergrated or expanded can be helpful to data researchers to gather emails from Large
 document(s).
 
+
+![videntta-image](https://user-images.githubusercontent.com/30528167/75135355-5bc60580-56f2-11ea-9556-6828cce8becd.JPG)
+
+
 ## Installation
 videntta requires [Python](https://python.org/) to run. Download [Videntta](https://github.com/stevemats/videntta/) program from github and store it in your desired folder location .e.g. Desktop. Next extract the zip and you are good to start. As simple as that.
 
