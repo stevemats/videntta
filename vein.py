@@ -20,9 +20,9 @@ print('''
 ''')
 
 
-# User greeting menu with conditions to prevent non-context keywordsbeig executed
+# conditions are to prevent non-context keywordsbeig executed
 def main():
-    print('\n1. Extracting emails from document')
+    print('\n1. Extract emails from your txt document')
     print('2. Exit')
     while True:
         try:
@@ -33,7 +33,7 @@ def main():
             elif choice == 2:
                 break
             else:
-                print("Invalid choice. Enter 1 or 2")
+                print("Invalid choice. Enter a choice in menu. 1 or 2")
                 main()
         except ValueError:
             print("Invalid choice. Enter 1 or 2")
@@ -51,12 +51,14 @@ def extractor():
             text += '{}\n'.format(email)
         return text
 
-    # user screen starts with a slow printing output of 8 seconds
+    # slow printing output in seconds
+    slow_speed = 8. / 100
+
     def slowprint(drake):
         for n in drake + '\n':
             sys.stdout.write(n)
             sys.stdout.flush()
-            time.sleep(8. / 100)
+            time.sleep(slow_speed)
 
     slowprint("Starting email extraction... ")
     time.sleep(5)
