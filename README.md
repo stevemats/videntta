@@ -4,40 +4,57 @@ If intergrated or expanded can be helpful to data researchers to gather emails f
 document(s).
 
 
-![videntta-image](https://user-images.githubusercontent.com/30528167/75135355-5bc60580-56f2-11ea-9556-6828cce8becd.JPG)
+![videnta demo](https://user-images.githubusercontent.com/30528167/133281198-99551a87-1e34-415c-8b1b-febb57d33cd5.PNG)
+
+<i>Note: You can either download or use git to have [videntta](https://github.com/stevemats/videntta).</i>
 
 
 ## Installation
-videntta requires [Python](https://python.org/) to run. Download [Videntta](https://github.com/stevemats/videntta/) program from github and store it in your desired folder location .e.g. Desktop. Next extract the zip and you are good to start. As simple as that.
 
-Now lets run our program in your desired terminal. For demonstration I'll be using 
-Command Prompt(cmd), Linux users can as well follow up:
+```
+git clone https://github.com/stevemats/videntta.git
+```
+
+git install -r requirements.txt
+
+Now lets run in these few simple steps:
 
 --Windows users
 ```sh
-C:\Desktop> cd videntta    (Videntta is the folder we extracted the program into)
+C:\Desktop> cd videntta    (assuming videntta is on Desktop)
+
 C:\Desktop> dir            (To view the directory)
-C:\Desktop> python vein.py  (Now running our program to extract the emails)
+
+C:\Desktop> pip install -r requirements.txt  (install anything missing)
+
+C:\Desktop> python vein.py  (Finally run the script)
 ```
 
 --Linux Users
 
 ```sh
-$ cd downloads\videntta       (Assuming the downloaded program is in downloads)
-$ ls                          (To view the files inside our folder)
-$ python vein.py
+$ cd downloads\videntta       (Assuming videntta is on downloads)
+
+$ ls                          (Displays files inside videntta)
+
+$ pip install -r requirements.txt  (installs anything missing)
+
+$ python vein.py              (Finally run the script)
 ```
 
-After running the script, it will prompt you to input the path to your file( the one you extracting emails from..).
-Email extraction will happen on the backend automatically and present an output on a separate file with the name
-emailList + extraction date.
 
-You can also run tests using demo emails located within the Test-Doc folder.
+After running the script, you'll be prompted with a menu. Choose the options according to your needs.
+
+Current options:
+- Email extraction from text documents.
+- Email extraction from unified resource locators(URLs).
+- A user friendly exit option for those just looking around.
+
+You can also run tests using demo emails located within the Test-Doc folder. You can play around with it to see how it works and hopefully contribute on it. Thanks
 
 
 ## ToDo:
 #### Extraction->
-- EXtract emails from unified resource locators
 - Email extractions from microsoft word documents
 - Support extractions from PDF, Word documents and other types of documents
 
