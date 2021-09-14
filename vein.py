@@ -6,6 +6,8 @@ import sys
 import os
 import random as r
 
+from assets.harvest_url import harvest_url as url_emails
+
 print('''
                                             __
       o                 /' ) 
@@ -23,7 +25,8 @@ print('''
 # conditions are to prevent non-context keywordsbeig executed
 def main():
     print('\n1. Extract emails from your txt document')
-    print('2. Exit')
+    print('2. Extract emails from a URL(Beta Version)')
+    print('3. Exit')
     while True:
         try:
             choice = int(input('Enter choice: '))
@@ -31,12 +34,15 @@ def main():
                 extractor()
                 break
             elif choice == 2:
+                url_emails()
+                break
+            elif choice == 3:
                 break
             else:
-                print("Invalid choice. Enter a choice in menu. 1 or 2")
+                print("Invalid choice. Enter a choice in menu. 1, 2 or 3")
                 main()
         except ValueError:
-            print("Invalid choice. Enter 1 or 2")
+            print("Invalid choice. Enter 1, 2 or 3")
     exit()
 
 
@@ -84,6 +90,9 @@ def extractor():
         print("{} emails successfully extracted:\n\n{} ".format(len(match), output))
     else:
         print("\n", "No extractable emails found in the document", "\n")
+
+def exit():
+    print('\n','Program closed. GoodBye!')
 
 
 if __name__ == '__main__':
