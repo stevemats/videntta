@@ -30,9 +30,9 @@ $ python vein.py
 
 After running the script, it will prompt you to input the path to your file( the one you extracting emails from..).
 Email extraction will happen on the backend automatically and present an output on a separate file with the name
-match(to present the email match output).
+emailList + extraction date.
 
-You can also run sample extraction process using the text document residing withing the Test-Doc folder.
+You can also run tests using demo emails located within the Test-Doc folder.
 
 
 ## ToDo:

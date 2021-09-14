@@ -74,7 +74,10 @@ def extractor():
 
     # added feature to sort out the email in list
     # Outputs identified emails(results) in the same program folder with a name match.txt
-    with open('match.txt', 'w') as match_file:
+    extensionTime = time.strftime("%m_%d_%Y")
+    myFile = "emailDump_"+extensionTime+".txt"
+    
+    with open(myFile, 'w') as match_file:
         match_file.write(output)
 
     if match:
