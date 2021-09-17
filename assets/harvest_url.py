@@ -22,6 +22,8 @@ def harvest_url():
 
     r = session.get(url)
 
+    print("Crawling %s" % url)
+
     # for JS driven websites
 
     r.html.render()

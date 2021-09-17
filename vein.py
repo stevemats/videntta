@@ -9,6 +9,7 @@ import os
 import random as r
 
 from assets.harvest_url import harvest_url as url_emails
+# from assets.email_verifier import email_verifier as verify_email
 
 print('''
                                             __
@@ -27,9 +28,10 @@ print('''
 # conditions are to prevent non-context keywordsbeig executed
 
 def main():
-    print('\n1. Extract emails from your txt document')
+    print('\n1. Extract emails from a txt document')
     print('2. Extract emails from a URL(Beta Version)')
-    print('3. Exit')
+    print('3. Verify email(quickest way to avoid fake/invalid emails)')
+    print('4. Exit')
     while True:
         try:
             choice = int(input('Enter choice: '))
@@ -40,13 +42,17 @@ def main():
                 url_emails()
                 break
             elif choice == 3:
+                # verify_email()
+                print('\n' "feature coming soon!") #temp
+                break
+            elif choice == 4:
                 break
             else:
-                print('Invalid choice. Enter a choice in menu. 1, 2 or 3'
+                print('Invalid choice. Enter a choice in menu. 1, 2, 3 or 4'
                       )
                 main()
         except ValueError:
-            print('Invalid choice. Enter 1, 2 or 3')
+            print('Invalid choice. Enter 1, 2, 3 or 4')
     exit()
 
 
