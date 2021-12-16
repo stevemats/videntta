@@ -9,7 +9,7 @@ import os
 import random as r
 
 from assets.harvest_url import harvest_url as url_emails
-# from assets.email_verifier import email_verifier as verify_email
+from assets.email_verifier import email_verifier as verify_email
 
 print('''
                                             __
@@ -29,7 +29,7 @@ print('''
 
 def main():
     print('\n1. Extract emails from a txt document')
-    print('2. Extract emails from a URL(Beta Version)')
+    print('2. Extract emails from a URL(Alpha Version)')
     print('3. Verify email(quickest way to avoid fake/invalid emails)')
     print('4. Exit')
     while True:
@@ -42,8 +42,7 @@ def main():
                 url_emails()
                 break
             elif choice == 3:
-                # verify_email()
-                print('\n' "feature coming soon!") #temp
+                verify_email()
                 break
             elif choice == 4:
                 break

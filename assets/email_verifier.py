@@ -1,19 +1,21 @@
-import quickemailverification 
+import quickemailverification
+
 
 def email_verifier():
 
     # client = quickemailverification.Client('API_Key_Here')
-    api_key = input ('Enter Your API Key(******):') #for tests
+    api_key = input(
+        'Enter Your API Key(******) from https://quickemailverification.com/apisettings:')  # for tests
     client = quickemailverification.Client(api_key)
-    quickemailverification = client.quickemailverification()
+    verifymail = client.quickemailverification()
+
+    # get client email to verify
+    verify_this = input('>>> Enter email to verify:')
 
     # PRODUCTION MODE
-    # response = quickemailverification.verify('test@example.com')
+    response = verifymail.verify(verify_this)
 
     # SANDBOX MODE
-    verify_this = input ('>>> Enter email to verify:')
-    response = quickemailverification.sandbox(verify_this)
+    # response = quickemailverification.sandbox(verify_this)
 
-    print(response.body) # The response is in the body attribute
-
-email_verifier()
+    print(response.body)  # The response is in the body attribute
